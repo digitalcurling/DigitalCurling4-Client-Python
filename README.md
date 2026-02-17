@@ -4,8 +4,8 @@ This is a client template compatible with DigitalCurling4.
 (For compatibility, DigitalCurling3 throw data can also be used)
 
 ## Language
-- [English(default)](https://github.com/digitalcurling/DigitalCurling4-ClientTemplate/blob/main/README.md)
-- [Japanese](https://github.com/digitalcurling/DigitalCurling4-ClientTemplate/blob/main/README.ja.md)
+- [English(default)](https://github.com/digitalcurling/DigitalCurling4-Client-Python/blob/main/README.md)
+- [Japanese](https://github.com/digitalcurling/DigitalCurling4-Client-Python/blob/main/README.ja.md)
 
 ## Install requirements.txt
 ```bash
@@ -28,7 +28,7 @@ By default, a file named .env.sample is included. Rename it to .env and set your
 ### Match Setting File
 In the "src.setting.json" file, describe the information required for the match, such as standard_end_count, time_limits, the simulator to be used, and the applied_rule.
 
-Please set game_mode to either **standard** or **mixed_doubles**.
+Please set game_mode to either **standard** or **mix_doubles**.
 
 - If standard is selected: 
 A 4-player match will start. 

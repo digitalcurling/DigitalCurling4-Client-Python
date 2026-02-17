@@ -4,8 +4,8 @@
 (互換性として、DigitalCurling3の投球データも使用可能です)
 
 ## 言語
-- [英語（デフォルト)](https://github.com/digitalcurling/DigitalCurling4-ClientTemplate/blob/main/README.md)
-- [日本語](https://github.com/digitalcurling/DigitalCurling4-ClientTemplate/blob/main/README.ja.md)
+- [英語（デフォルト)](https://github.com/digitalcurling/DigitalCurling4-Client-Python/blob/main/README.md)
+- [日本語](https://github.com/digitalcurling/DigitalCurling4-Client-Python/blob/main/README.ja.md)
 
 ## requirements.txt のインストール
 ```bash
@@ -28,7 +28,7 @@ PASS_WORD="password"
 ### 試合設定ファイル
 "src.setting.json" ファイルに、standard_end_count（標準エンド数）、time_limits（制限時間）、使用する simulator（シミュレータ）、applied_rule（適用ルール）など、試合に必要な情報を記述してください。 
 
-game_mode には **standard** または **mixed_doubles** を入れてください。
+game_mode には **standard** または **mix_doubles** を入れてください。
 - standardを選択した場合
 4人制での対戦が開始されます。この場合は、**applied_rule**には
     - fgz_rule
