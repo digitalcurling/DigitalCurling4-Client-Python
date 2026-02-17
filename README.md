@@ -116,7 +116,7 @@ The protocol for four-player curling is ![here](./figure/protocol.png).
 When **winner_team** in the state data becomes team0 or team1, the match is finished.
 
 ### Mixed Doubles
-The protocol for miced doubles is as follows ![here](./figure/md_protocol.png).
+The protocol for mixed doubles is as follows ![here](./figure/md_protocol.png).
 
 1. Instantiate the client
     ```Python
