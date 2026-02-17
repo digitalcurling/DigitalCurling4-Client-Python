@@ -26,7 +26,7 @@ By default, a file named .env.sample is included. Rename it to .env and set your
 ## Make Match
 
 ### Match Setting File
-In the "src.setting.json" file, describe the information required for the match, such as standard_end_count, time_limits, the simulator to be used, and the applied_rule.
+In the "setting.json" file or "md_setting.json" file, describe the information required for the match, such as standard_end_count, time_limits, the simulator to be used, and the applied_rule.
 
 Please set game_mode to either **standard** or **mix_doubles**.
 
@@ -47,7 +47,6 @@ Please note that for mixed doubles, enter a number between 0 and 5 in the **posi
 ## Match Making
 After completing the settings in setting.json, enter the following command.
 ```bash
-cd src
 python match_maker.py
 ```
 The above command should be entered when you want to start a new match.
@@ -69,13 +68,13 @@ After the above settings are in place, connect the client to the server by enter
 
 ```bash
 cd client0
-python client.py
+python sample.client.py
 ```
 
 Then open another terminal,
 ```bash
 cd client1
-python client.py
+python sample.client.py
 ```
 
 I think you can check the connection with these command.

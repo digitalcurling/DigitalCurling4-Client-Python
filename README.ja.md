@@ -26,7 +26,7 @@ PASS_WORD="password"
 
 ## 試合の作成
 ### 試合設定ファイル
-"src.setting.json" ファイルに、standard_end_count（標準エンド数）、time_limits（制限時間）、使用する simulator（シミュレータ）、applied_rule（適用ルール）など、試合に必要な情報を記述してください。 
+"setting.json" ファイルまたは"md_setting.json" ファイルに、standard_end_count（標準エンド数）、time_limits（制限時間）、使用する simulator（シミュレータ）、applied_rule（適用ルール）など、試合に必要な情報を記述してください。 
 
 game_mode には **standard** または **mix_doubles** を入れてください。
 - standardを選択した場合
@@ -47,7 +47,6 @@ game_mode には **standard** または **mix_doubles** を入れてください
 setting.json の設定が完了したら、以下のコマンドを入力してください。
 
 ```Bash
-cd src
 python match_maker.py
 ```
 上記のコマンドは、新しい試合を開始したいときに入力してください。
@@ -69,13 +68,13 @@ python match_maker.py
 
 ```Bash
 cd client0
-python client.py
+python sample.client.py
 ```
 その後、別のターミナルを開き、以下を実行します。
 
 ```Bash
 cd client1
-python client.py
+python sample.client.py
 ```
 これらのコマンドで接続を確認できると思います。
 
