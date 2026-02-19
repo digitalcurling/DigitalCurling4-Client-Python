@@ -13,14 +13,14 @@ pip install -r requirements.txt
 ```
 
 ## 使い方
-本リポジトリには、テンプレートとして4人制のカーリングとミックスダブルスの2つを用意してあります。./templatesの中にそれぞれに対応したプログラムがありあす。
+本リポジトリでは、./srcの中に4人制のカーリングとミックスダブルスの2つを用意してあります。それぞれ"client0"、"client1"を設けてあります。以下にあるユーザネームとパスワードはそれぞれ別のものを使用してください。
 
 ### ユーザーデータの準備
 試合を行うためには、各ユーザーがサーバー側に登録されている必要があります。 例:
 
 ```
-MATCH_USER_NAME="user"
-PASS_WORD="password"
+MATCH_USER_NAME="user0"
+PASS_WORD="pass0"
 ```
 デフォルトで.env.sampleというファイルが入っておりますが、そちらを.envファイルに変えた上、サーバに登録したユーザネーム・パスワードをこちらに設定してください。
 
@@ -68,13 +68,13 @@ python match_maker.py
 
 ```Bash
 cd client0
-python sample.client.py
+python sample_client.py
 ```
 その後、別のターミナルを開き、以下を実行します。
 
 ```Bash
 cd client1
-python sample.client.py
+python sample_client.py
 ```
 これらのコマンドで接続を確認できると思います。
 

@@ -13,13 +13,15 @@ pip install -r requirements.txt
 ```
 
 ## How to use
+This repository contains two projects in ./src: one for four-player curling and one for mixed doubles. Each project has a “client0” and a “client1” directory. Please use different usernames and passwords for each.
+
 ### Prepare user data
 To play a match, each user must be registered on the server.
 Example:
 
 ```
-MATCH_USER_NAME="user"
-PASS_WORD="password"
+MATCH_USER_NAME="user0"
+PASS_WORD="pass0"
 ```
 By default, a file named .env.sample is included. Rename it to .env and set your own username and password registered on the server in this file.
 
@@ -68,13 +70,13 @@ After the above settings are in place, connect the client to the server by enter
 
 ```bash
 cd client0
-python sample.client.py
+python sample_client.py
 ```
 
 Then open another terminal,
 ```bash
 cd client1
-python sample.client.py
+python sample_client.py
 ```
 
 I think you can check the connection with these command.

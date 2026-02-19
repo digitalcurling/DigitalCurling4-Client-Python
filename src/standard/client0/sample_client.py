@@ -13,16 +13,15 @@ formatter = logging.Formatter(
 )
 
 async def main():
-    # 最初のエンドにおいて、team0が先攻、team1が後攻です。
-    # デフォルトではteam1となっており、先攻に切り替えたい場合は下記を
-    # team_name=MatchNameModel.team0
-    # に変更してください
-    json_path = Path(__file__).parents[0] / "match_id.json"
-
-    # match_idを読み込みます。
+    # match_idの読み込みます。
+    json_path = Path(__file__).parents[1] / "match_id.json"
     with open(json_path, "r") as f:
         match_id = json.load(f)
-    
+
+    # 最初のエンドにおいて、team0が先攻、team1が後攻です。
+    # デフォルトではmatch_team_name=team1となっており、先攻に切り替えたい場合はDCClientのコンストラクタの引数にて
+    # match_team_name=MatchNameModel.team0
+    # としてください
     # クライアントの初期化（ログレベルはデフォルトでINFO、保存機能はデフォルトでTrue）
     client = DCClient(match_id=match_id, username=username, password=password, match_team_name=MatchNameModel.team0, auto_save_log=True, log_dir="logs")
 
@@ -64,6 +63,7 @@ async def main():
                 break
             
             next_shot_team = client.get_next_team()
+            logger.info(next_shot_team)
 
             # AIを実装する際の処理はこちらになります。
             if next_shot_team == match_team_name:

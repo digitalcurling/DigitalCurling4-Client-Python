@@ -1,0 +1,16 @@
+{
+    "use_default_config": true,
+    "team_name": "client0",
+    "player1": {
+        "max_velocity": 4.0,
+        "shot_std_dev": 0.08,
+        "angle_std_dev": 0.006,
+        "player_name": "male"
+    },
+    "player2": {
+        "max_velocity": 3.0,
+        "shot_std_dev": 0.025,
+        "angle_std_dev": 0.0025,
+        "player_name": "female"
+    }
+}
