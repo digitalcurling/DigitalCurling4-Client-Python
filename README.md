@@ -30,7 +30,7 @@ By default, a file named .env.sample is included. Rename it to .env and set your
 ### Match Setting File
 In the "setting.json" file or "md_setting.json" file, describe the information required for the match, such as standard_end_count, time_limits, the simulator to be used, and the applied_rule.
 
-Please set game_mode to either **standard** or **mix_doubles**.
+Please set game_mode to either **standard** or **mixed_doubles**.
 
 - If standard is selected: 
 A 4-player match will start. 
@@ -60,7 +60,7 @@ You can configure the players who will play in that match in “team_config.json
 ```md
 "use_default_config": true
 ``` 
-If you want to create a unique team,
+If you want to create a custom team with modified player parameters, configure it as follows.
 
 ```md
 "use_default_config": false

@@ -28,7 +28,7 @@ PASS_WORD="pass0"
 ### 試合設定ファイル
 "setting.json" ファイルまたは"md_setting.json" ファイルに、standard_end_count（標準エンド数）、time_limits（制限時間）、使用する simulator（シミュレータ）、applied_rule（適用ルール）など、試合に必要な情報を記述してください。 
 
-game_mode には **standard** または **mix_doubles** を入れてください。
+game_mode には **standard** または **mixed_doubles** を入れてください。
 - standardを選択した場合
 4人制での対戦が開始されます。この場合は、**applied_rule**には
     - fgz_rule
@@ -59,10 +59,10 @@ python match_maker.py
 ```Markdown
 "use_default_config": true
 ```
-独自のチームを作成したい場合は、以下のようにします。
+選手のパラメータを変更した独自のチームを作成したい場合は、以下のようにします。
 
 ```Markdown
-"use_default_config": flase
+"use_default_config": false
 ```
 上記の設定が完了したら、以下のコマンドを入力してクライアントをサーバーに接続してください。
 
