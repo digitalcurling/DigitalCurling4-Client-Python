@@ -292,11 +292,11 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "dc4client" }]
+requires-dist = [{ name = "dc4client", specifier = ">=1.0.6" }]
 
 [[package]]
 name = "dc4client"
-version = "1.0.4"
+version = "1.0.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -309,9 +309,9 @@ dependencies = [
     { name = "requests" },
     { name = "uuid6" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/06/47/fa7ab32319cfc16af830228ea7d399c829badfc0180babbd98b31ca9fb11/dc4client-1.0.4.tar.gz", hash = "sha256:931291a0ce4c4a9dc86619503ce04b51e11bb51ac1c478f13aa9d98b206d78b1", size = 13735, upload-time = "2026-02-11T09:56:53.699Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/34/13/0280de1396da290db6a1b474cd58dc26f3dfa743798c44fc0261c5eca4b8/dc4client-1.0.6.tar.gz", hash = "sha256:4d03e8d4c7c2ae081b4ea8d91a07f850c29f05f56d2f44a81568d5d8c1170ca0", size = 14517, upload-time = "2026-03-30T08:06:15.695Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ac/6f/7cce6db1db117b1e81e4c1f04b0655d2b4b574295920c1116cb9f14beb7d/dc4client-1.0.4-py3-none-any.whl", hash = "sha256:c30431c1df18a9a96c6e6e88667d2612220ef7ec40a1c9774612ccdfbbb049f7", size = 11123, upload-time = "2026-02-11T09:56:52.174Z" },
+    { url = "https://files.pythonhosted.org/packages/16/69/b8e51b011d3ada5dcffa55d3c65a3844f4f94a9342de94d7999b54f2709d/dc4client-1.0.6-py3-none-any.whl", hash = "sha256:31bd8eea7992a243fa0fcc81ee8ee428e2e734a85bbe610c9ae8ae9fbced6364", size = 11864, upload-time = "2026-03-30T08:06:14.385Z" },
 ]
 
 [[package]]
